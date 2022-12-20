@@ -2,30 +2,130 @@
 
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <title>Portfólio</title>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <div class="img-wrapper">
-                <img src="imagens/bg2.jpg" alt="">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <title>Portfólio</title>
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="hamburguer">
+                <div class="line" id="line1"></div>
+                <div class="line" id="line2"></div>
+                <div class="line" id="line3"></div>
+                <span>fechar</span>
             </div>
-            <div class="banner">
-                <h1>Statistics and Data Science Student | ICMC-USP</h1>
-                <p>Gustavo Andrade Tavares</p>
-                <button>Saiba mais</button>
-            </div>
-        </header>
-    </div>
-    <p>Photo by <a href="https://unsplash.com/@goumbik?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Lukas Blazek</a> on <a href="https://unsplash.com/s/photos/data-science?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
-</body>
+
+            <header>
+                <div class="img-wrapper">
+                    <img src="imagens/bg2.jpg" alt="">
+                </div>
+                <div class="banner">
+                    <h1>Statistics and Data Science Student | ICMC-USP</h1>
+                    <p>Gustavo Andrade Tavares</p>
+                    <button>Saiba mais</button>
+                </div>
+            </header>
+
+            <aside class="sidebar">
+                <nav>
+                    <ul class="menu">
+                        <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Conhecimentos</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
+                    </ul>
+                </nav>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </aside>
+
+            <section class="sessao-conhecimentos">
+                <div class="sessao-header">
+                    <h1>Conhecimentos</h1>
+                </div>
+                <div class="conhecimentos">
+                    <div class="conhecimento">
+                        <div class="conhecimento-header">
+                            <i class="fab fa-python"></i>
+                            <h3>Python</h3>
+                        </div>
+                        <div class="conhecimento-text">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                Reiciendis eveniet exercitationem hic sed eligendi distinctio 
+                                numquam non explicabo deleniti obcaecati! Ipsam, dolorum dicta 
+                                aut culpa.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="conhecimento">
+                        <div class="conhecimento-header">
+                            <i class="fab fa-r"></i>
+                            <h3>Linguagem R</h3>
+                        </div>
+                        <div class="conhecimento-text">
+                            <p>Commodi fugit rem eaque debitis aspernatur voluptate minus nostrum 
+                                similique nemo sit adipisci, laborum, tempora at excepturi unde, 
+                                quo voluptates porro necessitatibus exercitationem ut pariatur quos.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="conhecimento">
+                        <div class="conhecimento-header">
+                            <i class="fa-solid fa-database"></i>
+                            <h3>SQL</h3>
+                        </div>
+                        <div class="conhecimento-text">
+                            <p>Quis nihil illum velit ipsum, ea impedit iusto, ex earum pariatur magnam 
+                                unde. Labore, aspernatur possimus rerum aperiam ut ea eveniet. Omnis, sunt 
+                                corporis cumque iste voluptatum ratione quo corrupti?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="conhecimento">
+                        <div class="conhecimento-header">
+                            <i class="fa-regular fa-file-excel"></i>
+                            <h3>Excel</h3>
+                        </div>
+                        <div class="conhecimento-text">
+                            <p>Magnam, voluptatum maxime non consequatur omnis accusantium tempora qui 
+                                harum vero quia nostrum maiores optio eius reiciendis expedita nulla 
+                                praesentium asperiores animi quo facilis eum architecto culpa ex assumenda? 
+                                Facere.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="conhecimento">
+                        <div class="conhecimento-header">
+                            <i class="fab fa-github"></i>
+                            <h3>Git e GitHub</h3>
+                        </div>
+                        <div class="conhecimento-text">
+                            <p>Odit sint neque culpa. Nostrum iste, atque accusantium laboriosam quibusdam vel. Impedit, 
+                                animi cupiditate. Itaque doloremque voluptate natus sunt dicta laborum alias perferendis 
+                                voluptatibus deserunt! Quia amet ratione aspernatur repudiandae?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="conhecimentos-img-wrapper">
+                        <img src="imagens/conhecimentos.png" alt="imagem conhecimento">
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <p>Photo by <a href="https://unsplash.com/@goumbik?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Lukas Blazek</a> on <a href="https://unsplash.com/s/photos/data-science?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+        
+    </body>
+    <script src="script.js"></script>
 </html>
