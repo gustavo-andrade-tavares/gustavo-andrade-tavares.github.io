@@ -2,170 +2,258 @@
 
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-        <title>Portfólio</title>
-    </head>
-    <body>
-        <div class="container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Portfólio</title>
+  </head>
+  <body>
 
-            <div class="hamburguer">
-                <div class="line" id="line1"></div>
-                <div class="line" id="line2"></div>
-                <div class="line" id="line3"></div>
-                <span>fechar</span>
+    <div class="container">
+
+        <div class="hamburguer">
+          <div class="line" id="line1"></div>
+          <div class="line" id="line2"></div>
+          <div class="line" id="line3"></div>
+          <span>fechar</span>
+        </div>  
+
+        <header id="Home">
+            <div class="img-wrapper">
+                <img src="imagens/bg2.jpg" alt="">
             </div>
+            <div class="banner">
+                <h1>Statistics and Data Science Student | ICMC-USP</h1>
+                <p>Gustavo Andrade Tavares</p>
+                <a href="curriculo.html", target="_blank"><button>Saiba mais</button></a>
+            </div>
+            <div class="link-photo">
+                <p>Photo by <a href="https://unsplash.com/@goumbik?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",target="_blank">Lukas Blazek</a> on <a href="https://unsplash.com/s/photos/data-science?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",target="_blank">Unsplash</a></p>
+            </div>    
+        </header>
 
-            <header>
-                <div class="img-wrapper">
-                    <img src="imagens/bg2.jpg" alt="">
-                </div>
-                <div class="banner">
-                    <h1>Statistics and Data Science Student | ICMC-USP</h1>
-                    <p>Gustavo Andrade Tavares</p>
-                    <button>Saiba mais</button>
-                </div>
-            </header>
+        <aside class="sidebar">
+            <nav>
+                <ul class="menu">
+                    <li class="menu-item"><a href="#Home" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="#Conhecimentos" class="menu-link">Conhecimentos</a></li>
+                    <li class="menu-item"><a href="#Projetos" class="menu-link">Projetos</a></li>
+                    <li class="menu-item"><a href="#Contato" class="menu-link">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </aside>
 
-            <aside class="sidebar">
-                <nav>
-                    <ul class="menu">
-                        <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Conhecimentos</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
-                    </ul>
-                </nav>
-                <div class="social-media">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                </div>
-            </aside>
+        <section class="sessao-conhecimentos" id="Conhecimentos">
+          <div class="sessao-header">
+            <h1>Conhecimentos</h1>
+          </div>
+          <div class="conhecimentos">
+            <div class="conhecimento">
+              <div class="conhecimento-header">
+                <i class="fab fa-python"></i>
+                <h3>Python</h3>
+              </div>
+              <div class="conhecimento-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Qui vel obcaecati eaque quos, labore quibusdam incidunt 
+                    dolores vitae velit voluptates esse omnis enim, dolorem eveniet. 
+                    Rem ab obcaecati totam ipsum!
+                </p>
+              </div>
+            </div>
+            <div class="conhecimento">
+              <div class="conhecimento-header">
+                <i class="fab fa-r"></i>
+                <h3>Linguagem R</h3>
+              </div>
+              <div class="conhecimento-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Labore pariatur asperiores incidunt quod, sed aspernatur 
+                    eos commodi ex nostrum consequuntur aut vero cum illum perferendis 
+                    earum, eveniet hic itaque. Quod.
+                </p>
+              </div>
+            </div>
+            <div class="conhecimento">
+              <div class="conhecimento-header">
+                <i class="fa-solid fa-database"></i>
+                <h3>SQL</h3>
+              </div>
+              <div class="conhecimento-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Culpa ex eius voluptatem deleniti alias commodi doloremque 
+                    aspernatur id adipisci quia ea, distinctio maxime, at nemo. 
+                    Officiis suscipit excepturi quia aut?
+                </p>
+              </div>
+            </div>
+            <div class="conhecimento">
+              <div class="conhecimento-header">
+                <i class="fa-regular fa-file-excel"></i>
+                <h3>Excel</h3>
+              </div>
+              <div class="conhecimento-text">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Laboriosam quas facere alias, reprehenderit ullam quibusdam 
+                    itaque dolor nulla odio inventore culpa molestiae porro ea ad illo, 
+                    quos dicta ratione quisquam?
+                </p>
+              </div>
+            </div>
+            <div class="conhecimento">
+              <div class="conhecimento-header">
+                <i class="fab fa-github"></i>
+                <h3>Git e GitHub</h3>
+              </div>
+              <div class="conhecimento-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Molestiae sequi, quas illo dolor totam voluptas pariatur 
+                    harum blanditiis veritatis culpa doloremque aspernatur nesciunt 
+                    dicta iure fuga similique ad, ut impedit.
+                </p>
+              </div>
+            </div>
+            <div class="conhecimentos-img-wrapper">
+              <img src="imagens/conhecimentos.png" alt="imagem conhecimento">
+            </div>
+          </div>
+        </section>
 
-            <section class="sessao-conhecimentos">
-                <div class="sessao-header">
-                    <h1>Conhecimentos</h1>
-                </div>
-                <div class="conhecimentos">
-                    <div class="conhecimento">
-                        <div class="conhecimento-header">
-                            <i class="fab fa-python"></i>
-                            <h3>Python</h3>
-                        </div>
-                        <div class="conhecimento-text">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                                Reiciendis eveniet exercitationem hic sed eligendi distinctio 
-                                numquam non explicabo deleniti obcaecati! Ipsam, dolorum dicta 
-                                aut culpa.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="conhecimento">
-                        <div class="conhecimento-header">
-                            <i class="fab fa-r"></i>
-                            <h3>Linguagem R</h3>
-                        </div>
-                        <div class="conhecimento-text">
-                            <p>Commodi fugit rem eaque debitis aspernatur voluptate minus nostrum 
-                                similique nemo sit adipisci, laborum, tempora at excepturi unde, 
-                                quo voluptates porro necessitatibus exercitationem ut pariatur quos.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="conhecimento">
-                        <div class="conhecimento-header">
-                            <i class="fa-solid fa-database"></i>
-                            <h3>SQL</h3>
-                        </div>
-                        <div class="conhecimento-text">
-                            <p>Quis nihil illum velit ipsum, ea impedit iusto, ex earum pariatur magnam 
-                                unde. Labore, aspernatur possimus rerum aperiam ut ea eveniet. Omnis, sunt 
-                                corporis cumque iste voluptatum ratione quo corrupti?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="conhecimento">
-                        <div class="conhecimento-header">
-                            <i class="fa-regular fa-file-excel"></i>
-                            <h3>Excel</h3>
-                        </div>
-                        <div class="conhecimento-text">
-                            <p>Magnam, voluptatum maxime non consequatur omnis accusantium tempora qui 
-                                harum vero quia nostrum maiores optio eius reiciendis expedita nulla 
-                                praesentium asperiores animi quo facilis eum architecto culpa ex assumenda? 
-                                Facere.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="conhecimento">
-                        <div class="conhecimento-header">
-                            <i class="fab fa-github"></i>
-                            <h3>Git e GitHub</h3>
-                        </div>
-                        <div class="conhecimento-text">
-                            <p>Odit sint neque culpa. Nostrum iste, atque accusantium laboriosam quibusdam vel. Impedit, 
-                                animi cupiditate. Itaque doloremque voluptate natus sunt dicta laborum alias perferendis 
-                                voluptatibus deserunt! Quia amet ratione aspernatur repudiandae?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="conhecimentos-img-wrapper">
-                        <img src="imagens/conhecimentos.png" alt="imagem conhecimento">
-                    </div>
-                </div>
-            </section>
-
-            <div class="sessao-projetos" id="projetos">
+        <section class="sessao-projetos" id="Projetos">
           <div class="sessao-header">
             <h1>Projetos</h1>
           </div>
           <div class="projetos">
             <div class="card">
               <div class="card-img-wrapper">
-                <img src="imagens/proj1.jpg" alt="imagem do projeto ToDo" />
+                <img src="imagens/Projeto1.png" alt="">
               </div>
               <div class="card-info">
-                <h2>Proj 1</h2>
-                <h3>Python</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ducimus vero maxime amet magnam doloribus eos consequatur expedita architecto hic?</p>
-                <button class="btn">Saiba Mais</button>
+                <h2>Dashboard</h2>
+                <h3>R</h3>
+                <p>Dashboard sobre câncer: Aplicação de shinydashboard e leaflet <br/> Tags: Visualizações em Mapa, Gráficos Interativos e Estatística Descritiva</p>
+                <a href="https://guandrade.shinyapps.io/shinydashboard_app/", target="_blank"><button class="btn">Saiba Mais</button></a>
               </div>
             </div>
             <div class="card">
               <div class="card-img-wrapper">
-                <img src="imagens/proj2.jpg" alt="imagem do projeto Maratona" />
+                <img src="imagens/sem_proj.png" alt="">
               </div>
               <div class="card-info">
-                <h2>Proj 2</h2>
+                <h2>Proj2</h2>
                 <h3>R</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, vero aliquam? Pariatur libero voluptas ipsam ullam consectetur ab facilis cumque.</p>
-                <button class="btn">Saiba Mais</button>
+                <a href="https://guandrade.shinyapps.io/shinydashboard_app/", target="_blank"><button class="btn">Saiba Mais</button></a>
               </div>
             </div>
             <div class="card">
               <div class="card-img-wrapper">
-                <img src="imagens/proj3.jpg" alt="imagem do projeto Casa Bela" />
+                <img src="imagens/sem_proj.png" alt="">
               </div>
               <div class="card-info">
-                <h2>Proj 3</h2>
-                <h3>Python</h3>
+                <h2>Proj3</h2>
+                <h3>R</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est pariatur soluta doloremque tempore nisi placeat, eveniet voluptate recusandae. Eius, sapiente?</p>
-                <button class="btn">Saiba Mais</button>
+                <a href="https://guandrade.shinyapps.io/shinydashboard_app/", target="_blank"><button class="btn">Saiba Mais</button></a>
               </div>
             </div>
+            
           </div>
 
-        </div>
-        <p>Photo by <a href="https://unsplash.com/@goumbik?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Lukas Blazek</a> on <a href="https://unsplash.com/s/photos/data-science?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+          <div class="projetos1">
+            <div class="card">
+              <div class="card-img-wrapper">
+                <img src="imagens/sem_proj.png" alt="">
+              </div>
+              <div class="card-info">
+                <h2>Proj4</h2>
+                <h3>Python</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ducimus vero maxime amet magnam doloribus eos consequatur expedita architecto hic?</p>
+                <a href="https://guandrade.shinyapps.io/shinydashboard_app/", target="_blank"><button class="btn">Saiba Mais</button></a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img-wrapper">
+                <img src="imagens/sem_proj.png" alt="">
+              </div>
+              <div class="card-info">
+                <h2>Proj5</h2>
+                <h3>R</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, vero aliquam? Pariatur libero voluptas ipsam ullam consectetur ab facilis cumque.</p>
+                <a href="https://guandrade.shinyapps.io/shinydashboard_app/", target="_blank"><button class="btn">Saiba Mais</button></a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-img-wrapper">
+                <img src="imagens/sem_proj.png" alt="">
+              </div>
+              <div class="card-info">
+                <h2>Proj6</h2>
+                <h3>R</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est pariatur soluta doloremque tempore nisi placeat, eveniet voluptate recusandae. Eius, sapiente?</p>
+                <a href="https://guandrade.shinyapps.io/shinydashboard_app/", target="_blank"><button class="btn">Saiba Mais</button></a>
+              </div>
+            </div>
+            
+          </div>
+
+        </section>
+
+        <section class="sessao-contato" id="Contato">
+          <div class="contato-wrapper">
+            <div class="contato-left"></div>
+            <div class="contato-right">
+              <h1>Contato</h1>
+              <br/><br/><br/><br/><br/>
+              <i class="fa-solid fa-envelope"></i>
+              <br/>
+              <p>
+                guandradetavares@gmail.com
+              </p>
+              <br/><br/><br/>
+              <i class="fa-brands fa-whatsapp"></i>
+              <br/>
+              <p>
+                (11) 99509-1004
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="link-contato">
+          <p>Photo by <a href="https://unsplash.com/@dreamcatchlight?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText", target="_blank">Diana Light</a> on <a href="https://unsplash.com/photos/s358rpxEALI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",target="_blank">Unsplash</a></p>
+        </section>
+
+        <footer>
+          <div class="footer-content">
+            <p>
+              Copyright &copy; 2022, Todos os diretos reservados
+            </p>
+            <div class="social-list">
+              <ul>
+                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+        <a href="#Home" id="link-topo">
+          <i class="fas fa-arrow-up"></i>
+        </a>
         
-    </body>
-    <script src="script.js"></script>
+    </div>
+   </body>
+
+   <script src="script.js"></script>
 </html>
