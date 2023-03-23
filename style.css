@@ -255,13 +255,14 @@ header{
 
 .conhecimentos{
     display: grid;
-    grid-template-columns: repeat(16,1fr);
+    grid-template-columns: repeat(15,1fr);
     grid-template-rows: repeat(6,6rem);
     row-gap: .5rem;
 }
 
+
 .conhecimento:nth-child(1){
-    grid-column: 4 / 7;
+    grid-column: 3/ 6;
     grid-row: 1 / 3;
 }
 
@@ -271,18 +272,38 @@ header{
 }
 
 .conhecimento:nth-child(3){
-    grid-column: 4 / 7;
+    grid-column: 3 / 6;
     grid-row: 5 / -1;
 }
 
 .conhecimento:nth-child(4){
-    grid-column: 11 / 14;
+    grid-column: 7 / 10;
     grid-row: 1 / 3;
 }
 
 .conhecimento:nth-child(5){
-    grid-column: 12 / 15;
+    grid-column: 7 / 10;
     grid-row: 3 / 5;
+}
+
+.conhecimento:nth-child(6){
+  grid-column: 7 / 10;
+  grid-row: 5 / -1;
+}
+
+.conhecimento:nth-child(7){
+  grid-column: 11 / 14;
+  grid-row: 1 / 3;
+}
+
+.conhecimento:nth-child(8){
+  grid-column: 11 / 14;
+  grid-row: 3 / 5;
+}
+
+.conhecimento:nth-child(9){
+grid-column: 11 / 14;
+grid-row: 5 / -1;
 }
 
 .sessao-conhecimentos{
@@ -336,19 +357,21 @@ header{
 }
 
 .sessao-projetos{
-  background-color: #f5f5f5;
+  background-color: white;
 }
 
 .projetos {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    font-family: var(--font-secundary);
   }
 
   .projetos1 {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    font-family: var(--font-secundary);
   }
   
   .card {
@@ -409,6 +432,7 @@ header{
     margin-bottom: 2rem;
   }
 
+
   .card-info button {
     width: 8rem;
     height: 2.5rem;
@@ -416,11 +440,18 @@ header{
     background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
     font-family: var(--font-action);
-    color: #eee;
+    color: black;
     border-radius: .5rem;
     border: none;
     box-shadow: 0 0.1rem 0.8rem rgba(0,0,0,0.4);
+    cursor: pointer;
+    opacity: 0;
+    animation: moveBanner 1s 0.9s forwards;
   }
+
+  .card-info button:hover{
+    color: #ffffff;
+}
 
   .btn {
     background: #7F7FD5;  /* fallback for old browsers */
@@ -466,8 +497,8 @@ header{
   }
   
   .contato-wrapper {
-    width: 60%;
-    height: 30rem;
+    width: 80%;
+    height: 35rem;
     display: flex;
     box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.5);
   }
@@ -489,7 +520,7 @@ header{
     width: 100%;
     text-align: center;
     font-family: var(--font-primary);
-    color: #272727;
+    color: royalblue;
     font-size: 3rem;
     font-weight: lighter;
   }
@@ -507,7 +538,7 @@ header{
     color: #555;
     height: 2.5rem;
     width: 2.5rem;
-    font-size: 2rem;
+    font-size: 3.5rem;
     display: flex;
     justify-content: center;
     align-items: left;
@@ -525,6 +556,27 @@ header{
   .input-group {
     position: relative;
   }
+
+  .social-container {
+    grid-area: social;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+  } 
+
+  .social i:hover {
+    color: royalblue;
+  }
+
+  .social {
+    width: 80px;
+    height: 80px;
+    font-size: 3rem;
+    display: grid;
+    place-content: center;
+    transition: color 1s;
+  }
+
   
 
   .field {
@@ -579,7 +631,7 @@ header{
   footer{
     width: 100%;
     height: 7rem;
-    background-color: #17181b;
+    background-color: #272727;
     display: flex;
     justify-content: center;
     align-items: center;
